@@ -4,13 +4,19 @@ using Homework.Extension;
 using Homework.kontr3;
 using Homework.Homework_22._12._2021;
 
+
+
+//EnumExample.PrintValues();
+
+//TextFile.ReturnTime();
+
 //Aeroflot
-Aeroflot[] array = Aeroflot.Fulling();
-Array.Sort(array);
-Console.WriteLine("Sorted list:");
-Aeroflot.Print(array);
-Console.WriteLine("Enter a destination.");
-Aeroflot.Displaying(array, Console.ReadLine());
+//Aeroflot[] array = Aeroflot.Fulling();
+//Array.Sort(array);
+//Console.WriteLine("Sorted list:");
+//Aeroflot.Print(array);
+//Console.WriteLine("Enter a destination.");
+//Aeroflot.Displaying(array, Console.ReadLine());
 
 //Kontr3
 //var t1 = new KitchenTechnic("Холодильник", "Россия", 1500, "A", false);
