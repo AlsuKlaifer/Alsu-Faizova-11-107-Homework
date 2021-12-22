@@ -47,21 +47,21 @@ namespace Homework.Homework_22._12._2021
             return z.ToString();
         }
     }
-    enum Cosmetics
-    {
-        Mascara,
-        Pomade,
-        Powder,
-        Cream,
-        Eyeliner,
-        Highlighter
-    }
-    public class EnumExample
-    {
-        public static void PrintValues()
-        {
-            foreach (var c in System.Enum.GetValues(typeof(Cosmetics)))
-                Console.WriteLine(c.ToString());
-        }
-    }
+    //enum Cosmetics
+    //{
+    //    Mascara,
+    //    Pomade,
+    //    Powder,
+    //    Cream,
+    //    Eyeliner,
+    //    Highlighter
+    //}
+    //public class EnumExample
+    //{
+    //    public static void PrintValues()
+    //    {
+    //        foreach (var c in System.Enum.GetValues(typeof(Cosmetics)))
+    //            Console.WriteLine(c.ToString());
+    //    }
+    //}
 }

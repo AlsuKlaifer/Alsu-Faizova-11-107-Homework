@@ -22,9 +22,9 @@ namespace Homework.Homework_22._12._2021
             Date = date;
             Points = points;
         }
-        public static Team[] ReadFromFile(string path)
+        public static Team[] ReadFromFile(string str)
         {
-            string[] lines = File.ReadAllLines(path);
+            string[] lines = File.ReadAllLines(str);
             List<Team> list = new List<Team>();
             foreach (var line in lines)
             {
@@ -42,7 +42,6 @@ namespace Homework.Homework_22._12._2021
         }
         public static void DisplayWinner(DateTime date1, DateTime date2, Team[] array)
         {
-
             var list = array.ToList();
             if (date1 > date2)
             {
@@ -85,7 +84,6 @@ namespace Homework.Homework_22._12._2021
                 else if (obje.Points > Points) return 1;
                 else return 0;
             }
-
             throw new Exception("Unnable to compare objects");
         }
     }
