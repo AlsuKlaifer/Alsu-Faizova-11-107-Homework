@@ -2,17 +2,26 @@
 using Homework.Christmas;
 using Homework.Extension;
 using Homework.kontr3;
+using Homework.Homework_22._12._2021;
+
+//Aeroflot
+Aeroflot[] array = Aeroflot.Fulling();
+Array.Sort(array);
+Console.WriteLine("Sorted list:");
+Aeroflot.Print(array);
+Console.WriteLine("Enter a destination.");
+Aeroflot.Displaying(array, Console.ReadLine());
 
 //Kontr3
-var t1 = new KitchenTechnic("Холодильник", "Россия", 1500, "A", false);
-var t2 = new KitchenTechnic("Плита", "Франция", 500, "В", true);
-var t3 = new KitchenTechnic("Духовка", "Англия", 700, "A", true);
-var arr = new KitchenTechnic[] { t1, t2};
-var queue = new Queue(arr);
-queue.Add(t3);
-var queueClone = queue.Clone() as Queue;
-queueClone.FileWrite();
-Console.WriteLine(queue.Read()); 
+//var t1 = new KitchenTechnic("Холодильник", "Россия", 1500, "A", false);
+//var t2 = new KitchenTechnic("Плита", "Франция", 500, "В", true);
+//var t3 = new KitchenTechnic("Духовка", "Англия", 700, "A", true);
+//var arr = new KitchenTechnic[] { t1, t2};
+//var queue = new Queue(arr);
+//queue.Add(t3);
+//var queueClone = queue.Clone() as Queue;
+//queueClone.FileWrite();
+//Console.WriteLine(queue.Read()); 
 
 //ICloneable
 //var c1 = new ComplexNumber(1, -32);

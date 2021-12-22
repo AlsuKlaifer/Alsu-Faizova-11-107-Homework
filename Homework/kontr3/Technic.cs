@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
 
 namespace Homework.kontr3
 {
@@ -13,7 +13,7 @@ namespace Homework.kontr3
         public int Power { get; }
         public string EnergyClass { get; }
 
-        public Technic(string name, string country, int power, int energy)
+        public Technic(string name, string country, int power, string energy)
         {
             Name = name;
             Country = country;
@@ -43,4 +43,5 @@ namespace Homework.kontr3
                 $"Мощность: {Power}" +
                 $"Класс Энергосбережения {EnergyClass}";
         }
+    }
 }
