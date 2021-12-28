@@ -13,8 +13,10 @@ namespace Homework.Extension
         /// </summary>
         public static bool IsInteger(this RationalFraction rf)
         {
-            return //rf.B ==
-                   true;
+            rf.reduce_YourSelf();
+            if (rf.A == rf.B)
+                return true;
+            return false;
         }
     }
 }

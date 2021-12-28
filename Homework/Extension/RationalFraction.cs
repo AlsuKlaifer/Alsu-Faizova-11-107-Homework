@@ -29,13 +29,13 @@ namespace Homework.Extension
             a = x;
             b = y;
         }
-        private void reduce_YourSelf()
+        public void reduce_YourSelf()
         {
             int z = NOD(a, b);
             a = a / z;
             b = b / z;
         }
-        private RationalFraction reduce(RationalFraction r)
+        public RationalFraction reduce(RationalFraction r)
         {
             int z = NOD(r.a, r.b);
             return new RationalFraction(r.a / z, r.b / z);

@@ -10,13 +10,9 @@ namespace Homework.Homework_22._12._2021
     {
         public string Name;
         public DateTime Date;
-        private int points;
-        public int Points
-        {
-            get { return points; }
-            set { if (value >= 0) points = value; }
-        }
-        public Team(string name, DateTime date, int points) : this()
+        public int Points { get; set; }
+
+        public Team(string name, DateTime date, int points)
         {
             Name = name;
             Date = date;
@@ -55,7 +51,7 @@ namespace Homework.Homework_22._12._2021
                 }
             }
             list.Sort();
-            Console.WriteLine(list[list.Count - 1]);
+            Console.WriteLine(list[0].Name); //наиболее успешная команда в заданном периоде
         }
         public static Team[] Sort(Team[] matches)
         {
@@ -64,7 +60,7 @@ namespace Homework.Homework_22._12._2021
             {
                 for (int j = i + 1; j < matches.Length; j++)
                 {
-                    if (matches[i].points > matches[j].points)
+                    if (matches[i].Points > matches[j].Points)
                     {
                         temp = matches[i];
                         matches[i] = matches[j];

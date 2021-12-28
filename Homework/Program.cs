@@ -4,6 +4,8 @@ using Homework.Extension;
 using Homework.kontr3;
 using Homework.Homework_22._12._2021;
 
+RationalFractionExtension.IsInteger(new RationalFraction(2, 2));
+
 //Team
 var team = Team.ReadFromFile("Teams.txt");
 Team.DisplayWinner(new DateTime(2000,01,01), new DateTime(2009,01,01), team);

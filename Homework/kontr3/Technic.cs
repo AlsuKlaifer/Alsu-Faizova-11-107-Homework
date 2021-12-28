@@ -8,10 +8,10 @@ namespace Homework.kontr3
 {
     public abstract class Technic
     {
-        public readonly string Name;
-        public readonly string Country;
-        public int Power { get; }
-        public string EnergyClass { get; }
+        public string Name { get; set; }
+        public string Country { get; set; }
+        public int Power { get; set; }
+        public string EnergyClass { get; set; }
 
         public Technic(string name, string country, int power, string energy)
         {
@@ -38,10 +38,10 @@ namespace Homework.kontr3
         }
         public override string ToString()
         {
-            return $"Название техники: {Name}" +
-                $"Страна производителя: {Country}" +
-                $"Мощность: {Power}" +
-                $"Класс Энергосбережения {EnergyClass}";
+            return $"Название техники: {Name}. " +
+                $"Страна производителя: {Country}. " +
+                $"Мощность: {Power}. " +
+                $"Класс Энергосбережения: {EnergyClass}. ";
         }
     }
 }
