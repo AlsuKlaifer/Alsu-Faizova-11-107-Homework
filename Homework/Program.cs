@@ -1,14 +1,18 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using System.IO;
 using Homework.Christmas;
 using Homework.Extension;
 using Homework.kontr3;
 using Homework.Homework_22._12._2021;
 
-RationalFractionExtension.IsInteger(new RationalFraction(2, 2));
+string s = "C:\\Users\\Asus\\source\\repos\\AlsuKlaifer\\Alsu-Faizova-11-107-Homework\\Homework\\Exams.txt";
+Exam.DatesOfExams(s);
+
+//RationalFractionExtension.IsInteger(new RationalFraction(2, 2));
 
 //Team
-var team = Team.ReadFromFile("Teams.txt");
-Team.DisplayWinner(new DateTime(2000,01,01), new DateTime(2009,01,01), team);
+//var team = Team.ReadFromFile("Teams.txt");
+//Team.DisplayWinner(new DateTime(2000,01,01), new DateTime(2009,01,01), team);
 
 //EnumExample.PrintValues();
 
